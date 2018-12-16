@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="css/clstyle.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+        <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+        <script type='text/javascript' src="js/lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+<main>
+	<div class="menu-div">
+            <nav>
+                   <ul class="menu">
+                        <li><a href = "index.html">Homepage</a></li>
+                        <li><a href = "aboutme.html">About Me</a></li>
+                        <li><a href = "illustration.html">Illustration</a></li>
+                        <li><a href = "project.html">Project</a></li>
+                        
+                    
+                    </ul>
+             </nav>
+        </div>
+
+     <div class="caption">
+        <h1>I am always enjoying hitting the road</h1>
+	</div>
+	
+	<div class="controls">
+		<button type="button" class="control" data-filter="all">All</button>
+		<button type="button" class="control" data-filter=".venice">Venice</button>
+		<button type="button" class="control" data-filter=".florence">Florence</button>
+		<button type="button" class="control" data-filter=".portrait">Portrait</button>
+		<!-- <button type="button" class="control" data-filter="none">None</button> -->
+
+	</div>
+
+
+	<div class="container">
+		<div class="mix venice">
+		<a href="images/venice1.jpg" data-lightbox="travel" data-title="There is Venice"><img src="images/venice1.jpg" alt="venice"/></a>
+		</div>
+		<div class="mix venice">
+		<a href="images/venice2.jpg" data-lightbox="travel" data-title="There is Venice"><img src="images/venice2.jpg" alt="venice"/></a>
+		</div>
+		<div class="mix venice">
+		<a href="images/venice3.jpg" data-lightbox="travel" data-title="There is Venice"><img src="images/venice3.jpg" alt="venice"/></a>
+		</div>
+		<div class="mix portrait">
+		<a href="images/trip1.jpg" data-lightbox="travel" data-title="There is Yellow Stone"><img src="images/trip1.jpg" alt="yellow stone"/></a>
+		</div>
+		<div class="mix portrait">
+		<a href="images/trip2.jpg" data-lightbox="travel" data-title="There is Arctic Circle"><img src="images/trip2.jpg" alt="arctic circle"/></a>
+		</div>
+		<div class="mix portrait">
+		<a href="images/trip3.jpg" data-lightbox="travel" data-title="There is Salt Lake City"><img src="images/trip3.jpg" alt="salt lake city"/></a>
+		</div>
+		<div class="mix florence">
+		<a href="images/me1.jpg" data-lightbox="travel" data-title="There is Florence"><img src="images/me1.jpg" alt="florence"/></a>
+		</div>
+		<div class="mix florence">
+		<a href="images/me2.jpg" data-lightbox="travel" data-title="There is Florence"><img src="images/me2.jpg" alt="florence"/></a>
+		</div>
+		<div class="mix portrait">
+		<a href="images/me3.jpg" data-lightbox="travel" data-title="There is Key West"><img src="images/me3.jpg" alt="key west"/></a>
+		</div>
+		
+	
+	</div>
+	<script type="text/javascript" src="js/mixitup.min.js"></script>
+	<script>
+		var mixer = mixitup('.container');
+		// var mixer = mixitup()
+		var mixer = mixitup(img,{
+			selectors: {
+				target: 'img'
+			},
+			animation: {
+				duration: 300
+			}
+		});
+	</script>
+ </main>
+</body>
+</html>

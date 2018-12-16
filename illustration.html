@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Illustration</title>
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/clstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+  <a class="skip-main" href="#main">Skip to main content</a>
+  <div class="menu-div">
+    <nav>
+      <ul class="menu">
+        <li><a href = "index.html" tabindex="-1">Homepage</a></li>
+        <li><a href = "aboutme.html" tabindex="-1">About Me</a></li>
+        <li><a class= "currentpage" href = "illustration.html" tabindex="-1">Illustration</a></li>
+        <li><a href = "project.html" tabindex="-1">Project</a></li>
+        <!-- <li><a href = "travel.html">Travel</a></li> -->
+      </ul>
+    </nav>
+  </div>
+ <br>
+ <br>
+ <br>
+    <header>
+     <div id="banner">
+      <div class="content">
+      <h1> Illustration Works </h1>
+      </div>
+     </div>
+    </header>
+<main id= "main" tabindex="-1" class= infographic>
+        <div class="info a">
+                <img src="images/draw5.png" alt="rines hands"/>
+                <h2>Rines Hands</h2>
+                <p class="description">
+                  Based on a real photo of rinsing hands to draw this image by illustrator!</p>
+           </div>
+        <div class="info b">
+                <img src="images/draw1.png" alt="alphabet"/>
+                <h2>Alphabet with Disney Characters</h2>
+                <p class="description">
+                  Created a alphabet using different disney characters with their first name!
+                </p>
+              </div>
+        <div class="info c">
+                <img src="images/draw7.png" alt="logo"/>
+                <h2>Personal Logo</h2>
+                <p class="description">
+                  Designed my personal logo!</p>
+              </div>
+        <div class="info d">
+                <img src="images/draw8.png" alt="dry hands"/>
+                <h2>Dry Hands</h2>
+               
+                <p class="description">
+                    Based on a real photo of drying hands to draw this image by illustrator!</p>
+              </div>
+        <div class="info e">
+            <img src="images/draw4.png" alt="doraemon"/>
+            <h2>Doraemon</h2>
+            <p class="description">
+              Wish to have a real Doraemon to help achieve all dreams!</p>
+          </div>
+         <div class="info f">
+            <img src="images/draw9.png" alt="balded men"/>
+            <h2>Balded Men</h2>
+    
+            <p class="description">
+              A special slogan to indicate that 25% of men begin balding by age 30!</p>
+          </div>
+              
+        <div class="recipe">
+
+            <img id="myImg" src="images/draw2.png" alt="whales and whaling">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01" alt="content">
+              <div id="caption"></div>
+            </div>
+            <h2>Whales and Whaling</h2>
+            <p class="description">
+              Whales are my favorite animals, but they like dolphins, always suffer different dangerous factors from extern environment!
+            </p>
+        </div>
+        
+
+
+
+
+              <script>
+                  // Get the modal
+                  var modal = document.getElementById('myModal');
+                  
+                  // Get the image and insert it inside the modal - use its "alt" text as a caption
+                  var img = document.getElementById('myImg');
+                  var modalImg = document.getElementById("img01");
+                  var captionText = document.getElementById("caption");
+                  img.onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                  }
+                  
+                  // Get the <span> element that closes the modal
+                  var span = document.getElementsByClassName("close")[0];
+                  
+                  // When the user clicks on <span> (x), close the modal
+                  span.onclick = function() { 
+                    modal.style.display = "none";
+                  }
+                  </script>
+
+
+        </main>
+
+            
+<footer>
+    <a href="https://www.linkedin.com/in/chen-liang-b9859a170/" aria-label="Chen Liang's LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+    <a href="https://github.com/ChenLiang7" aria-label="Chen Liang's Github"><i class="fab fa-github-square" aria-hidden="true"></i></a>
+    <a href="mailto:liangcc@umich.edu" aria-label="Email to Chen Liang"><i class="fas fa-envelope-square" aria-hidden="true"></i></a>
+    <p>Chen Liang @ 2018</p>
+</footer>
+              
+               
+</body>
+</html>
+              
+

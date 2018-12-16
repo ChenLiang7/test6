@@ -1,0 +1,109 @@
+@media only screen and (max-width:580px)
+{
+
+    #homepage-body{
+        background-image:url("../images/sback.jpeg");
+        background-repeat:no-repeat;
+        background-size:100%;
+        background-attachment:fixed; 
+    }
+
+
+    .box1 {
+        width: 90%;
+        margin-left: 4%;
+        padding: 0;
+        margin: auto;
+    }
+    
+    .menu-div{
+        width: 90%;
+        margin-left: 4%;
+        padding: 0;
+        
+    }   
+    .menu li{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10;
+    }
+
+    #banner .content{
+        visibility: hidden;
+    }
+
+}
+
+
+@media only screen and (max-width:1000px)
+{
+
+    .box1 {
+        width: 90%;
+        /* margin-left: 4.5%;
+        padding: 0; */
+        margin-left: 5%;
+    }
+
+    .menu-div{
+        width: 90%;
+        /* margin-left: 4%; */
+        /* padding: 0; */
+        margin: auto;
+    }
+   
+    .profile-grid{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 1px;
+        width: 90%;
+        margin:auto;
+
+    }
+
+    .profile-part-2{
+        margin:auto;
+    }
+    .interest-grid{
+        display: grid;
+        width: 90%;
+        grid-template-columns: 1fr;
+        margin:auto;
+    }
+    .interest-r1{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    .flip-card{
+        width: 100%;
+        margin: auto;
+    }
+
+    .infographic{
+        display: block;
+    }
+    .info, .recipe{
+        width: 50%;
+        margin: auto;
+    }
+
+   
+}
+
+
+
+
+
+
+
+
+/* @media only screen and (orientation:landscape){
+    #myself{
+        background-color: #b9e5fb;
+    }
+} */
+
+
+

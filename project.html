@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Sarala" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/clstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+  <main>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="menu-div">
+        <nav>
+          <ul class="menu">
+            <li><a href = "index.html", tabindex="-1">Homepage</a></li>
+            <li><a href = "aboutme.html", tabindex="-1">About Me</a></li>
+            <li><a href = "illustration.html", tabindex="-1">Illustration</a></li>
+            <li><a class= "currentpage" href = "project.html", tabindex="-1">Project</a></li>
+            <!-- <li><a href = "travel.html">Travel</a></li> -->
+          </ul>
+        </nav>
+      </div>
+  <div class="header">
+    <h1>Interesting Project Work</h1>
+  </div>
+  
+  <div class="note">
+    <h2>A Note on Project</h2>
+    <p>These projects are made through courses I took. </p>
+
+    <div id= "main" tabindex="-1" class="project">
+        <button class="accordion">Mapping the Arboretum</button>
+         <div class="panel">
+         <p>The story map is an interactive map. Click <a href="https://umiami.maps.arcgis.com/apps/MapJournal/index.html?appid=916587f2905a44d8b93a01ed522a8046">here</a> to check out story map. Users can look through it and click on each map to receive information. This story map focuses on the Arboretum in University of Miami. In story map, I first introduced the University of Miami and showed the location of UM on the map. Then I made two maps to introduce the Arboretum and its history and marked clearly on the map about the location of the Arboretum. Then, I created the Arboretum exhibits animation through Photoshop. This animation can show 14 exhibits of the Arboretum. It also presents a reasonable tour path to visit the entire Arboretum. The Arboretum has one main path from Exhibit 1 to Exhibit 7. According to this animation, tourists could have the most efficient way to visit all exhibits. After the animation, I used 14 maps to identify 14 different exhibit areas one by one to make sure that all details were clearly presented on the map. Readers could look through maps one by one to get the introduction of exhibits and click points to get introduction of trees. Finally, I created a 3D visualization map to show the entire view of the Arboretum. It used the height of each tree as an attribute to make this 3D graphic.</p>
+         </div>
+
+        <button class="accordion">Friender: An Application Design</button>
+         <div class="panel">
+         
+          <!-- <video src="application.mov" width="300px" height="500px" kind="captions" controls>Friender</video> -->
+
+          <video  width="300px" height="500px" controls>
+            <source src="application.mov">
+              <track kind="captions" label="Friender">
+              <track kind="descriptions">
+          </video>
+           
+
+
+         <p>I designed my first application this semester named “Friender”, it can enable users to make friends based on similar hobbies and increase chances of face-to-face interactions. When I started to do this project, I was being told to do problem statement first. Then I realized that with the help of technology, people can easily make connections with each other, many people actually feel more lonely. Thus, I decided to design an application to help users make good friends through their common interests and increase the chance of face-to-face interactions. 
+            I did competitive analysis and QOC analysis to analyze the feasibility of application. It indicated that the application could help users find someone who shares similar hobbies and increase the opportunity to face-to-face communication. Also, I draw the story map to describe workflow of the application. It showed that this application could work for real based on that special features. At last, I created a digital prototype to transfer my ideas into a real model. 
+            </p>
+         </div>
+        <button class="accordion">Portfolio Design</button>
+         <div class="panel">
+         <p>I designed my personal portfolio used HTML, CSS and Javascript. Click <a href="https://chenliang7.github.io/final_portfolio_3/">here</a> to check out portfolio. This was my first time to learn web design. In addition to basic elements in pages, I also added flip card, lightbox and accordion to my portfolio, making my pages look more meaningful and readable. The portfolio has four main pages. The homepage is the primary page to indicate who I am, and it is a pretty simple page. The second page is talking about me with elaborate information, including educational background, a link directly to my trips and things I love. The illustrations page shows many works I did before. I used adobe illustrator to finish these works. The last page is about my projects which I made through the courses I took. In sum, this website is all about introducing myself.  </p>
+         </div>
+
+    </div>
+
+  </div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</main>
+<footer>
+      <a href="https://www.linkedin.com/in/chen-liang-b9859a170/" aria-label="Chen Liang's LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+      <a href="https://github.com/ChenLiang7" aria-label="Chen Liang's Github"><i class="fab fa-github-square" aria-hidden="true"></i></a>
+      <a href="mailto:liangcc@umich.edu" aria-label="Email to Chen Liang"><i class="fas fa-envelope-square" aria-hidden="true"></i></a>
+      <p>Chen Liang @ 2018</p>
+</footer>
+
+</body>
+</html>
